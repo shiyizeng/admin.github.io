@@ -2,6 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import  Dashboard  from '../components/Dashboard.vue'
 import  Rest from '../components/Rest.vue'
+import  Personal from '../components/Personal.vue'
+import pp from '../components/pp.vue'
+
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts 
 
 Vue.use(VueRouter)
 
@@ -19,6 +24,18 @@ const routes = [
     name: 'Rest',
     component:Rest
     // component:  ()=>import('../components/Rest.vue')
+  },
+  {
+    path: '/pp',
+    name: 'pp',
+    component:pp
+    // component:  ()=>import('../components/pp.vue')
+  },
+  {
+    path: '/personal',
+    name: 'Personal',
+    component:Personal
+  
   },
   {
     path: '/dashboard',

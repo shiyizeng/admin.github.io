@@ -5,7 +5,13 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+import axios from "./myaxios/myaxios.js"
+Vue.prototype.$http=axios
 
+
+//引入echart
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts;
 
 
 import ElementUI from 'element-ui';
